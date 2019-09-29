@@ -11,7 +11,8 @@ export GOOGLE_CREDENTIALS=$(cat /path-to-service-account.json)
 cat <<EOF>addr.auto.tfvars
 gcp_project = "your-project-name"
 address_count = 3
-secondary_address_count
+secondary_address_count = 1
+EOF
 
 # Run terraform
 terraform plan
